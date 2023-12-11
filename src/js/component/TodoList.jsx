@@ -9,6 +9,7 @@ const TodoList = ({todos, setTodos, userURL}) => {
             // body: JSON.stringify([])
         })
         setTodos("");
+    
     }
     
     const deleteHandler = (index) => {
