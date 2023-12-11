@@ -40,6 +40,11 @@ div.todo {
     min-width: 30%;
 }
 
+.buttons {
+  /* display: flex;
+  justify-content: flex-end; */
+  margin-left: 2rem;
+}
 form button {
     padding: 0.5rem;
     font-size: 2rem;
@@ -56,6 +61,7 @@ form button:hover {
     background: #ff6f47;
     color: white;
 }
+
 .todo-container {
     display: flex;
     justify-content: center;
@@ -83,7 +89,7 @@ form button:hover {
 }
 
 .todo li {
-  flex: 1;
+  /* flex: 1; */
 }
   
 .trash-btn {
@@ -96,6 +102,7 @@ form button:hover {
 }
 .complete-btn {
   background:teal;
+  margin-left: 23rem;
 }
 .todo-item {
   border-bottom: 1px solid teal;
@@ -116,6 +123,7 @@ form button:hover {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+
 }
 
 .counter {
