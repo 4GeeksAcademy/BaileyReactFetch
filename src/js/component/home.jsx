@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Heading from "./Heading";
 import Form from "./Form";
 import TodoList from "./TodoList";
-import Count from "./Count";
 
 const Home = () => {const [inputText, setInputText] = useState("");
 
@@ -15,7 +14,14 @@ const Home = () => {const [inputText, setInputText] = useState("");
 		.then(data=>setTodos(data))
 		.catch(error=>console.log(error))
     }, []);
-
+	//create new user
+	if(todos.length===0) {
+		fetch(userURL, {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify([])
+        })
+	}
 	return (
 		<div className="heading">
 			<Heading />

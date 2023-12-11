@@ -17,8 +17,8 @@ const Form = ({setInputText, todos, setTodos, inputText, userURL}) => {
         console.log(newTodoArray)
         fetch(userURL, {
             method: "PUT",
-            headers: {"Content-Type": "application/json",
-        }, body: JSON.stringify(newTodoArray)
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(newTodoArray)
         })
         //validate reponse
             .then(response => {

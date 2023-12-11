@@ -91,6 +91,10 @@ form button:hover {
 .todo li {
   /* flex: 1; */
 }
+
+.abc {
+  justify-content: space-between;
+}
   
 .trash-btn {
   background:  rgba(240, 128, 128, 0.646);
